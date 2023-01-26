@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- section radio mit 2 Auswahlmöglichkeiten -->
+    <section class="mehrwertsteuerNettoBrutto">
+        <h2>Was soll berechnet werden</h2>
+        <article>
+            <input type="radio" id="steuerAufschlagen">
+            <label for="radio">Mehrwertsteuer aufschlage(Netto zu Brutto)</label>
+        </article>
+
+       <article>
+        <input type="radio" id="steuerAbziehen">
+        <label for="radio">Mehrwertsteuer abziehen(Brutto zu Netto)</label>
+       </article>    
+    </section>
+
+    <!-- Mehrwertsteuersatz -->
+    <p>Mehrwertsteuersatz</p>
+    <input type="radio" id="mehrwertsteuer19">
+    <label for="radio">19 %</label>
+    <input type="radio" id="mehrwertsteuer7">
+    <label for="radio">7 %</label>
+
+    <!-- Eingabefeld des Nettobetrages -->
+    <section  class="nettobetragBerechnen">
+        <label for="nettoBetrag">Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</label>
+        <input type="text" id="nettoBetrag">
+        <label for="nettoBetrag">Bruttobetrag (Preis inklusive Mehrwertsteuer) in Euro</label>
+        <input type="text" id="bruttoBetrag">
+        <button onclick="berechneMehrwertsteuer()">Berechnen</button>
+    </section>
+
+    <!-- Ergebnis Mwst. und Bruttobetrag anzeigen lassen -->
+    <h3>Ergebnis</h3>
+
+    <p>Mehrwertsteuerbetrag</p>
+    <p id="mehrwertsteuerErgebnis"></p>
+
+    <p>Bruttobetrag</p>
+    <p id="bruttobetragErgebnis"></p>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

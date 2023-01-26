@@ -1,0 +1,16 @@
+.mehrwertsteuerNettoBrutto {
+    background-color: lightgray;
+    padding-bottom: 5vh;
+}
+
+article {
+    display: block;
+} 
+
+.nettobetragBerechnen {
+    background-color: lightgray;
+}
+
+.nettobetragBerechnen label,button {
+    display: block;
+}
