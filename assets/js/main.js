@@ -32,9 +32,7 @@
     }
     else if (steuerAufschlagen.checked && mehrwertsteuer7.checked) {
         const mwstAufschlagen7BruttoBetrag = (nettoBetragEingabe * 107) / 100
-        console.log(mwstAufschlagen7BruttoBetrag);
         mehrwertsteuerErgebnis.innerHTML = mwstAufschlagen7BruttoBetrag
-        console.log(mwstAufschlagen7BruttoBetrag);
         const mwstAufschlagen7Betrag = mwstAufschlagen7BruttoBetrag - nettoBetragEingabe
         bruttobetragErgebnis.innerHTML = mwstAufschlagen7Betrag
     }
